@@ -1,0 +1,29 @@
+{
+  "name": "bn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bunyan": "^1.8.15",
+    "node-binance-api": "^0.13.1",
+    "ws": "^7.4.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@types/bunyan": "^1.8.8",
+    "@types/ws": "^8.5.3",
+    "eslint": "^8.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "build": "tsc -p ./",
+    "start": "node build/index",
+    "listen": "npm run build && npm run start"
+  },
+  "license": "MIT"
+}
